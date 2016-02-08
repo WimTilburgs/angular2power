@@ -1,11 +1,13 @@
 import {Component} from 'angular2/core';
+import {HeroesComponent} from '../app/heroes/heroes.component'
+import {Logger} from './logger.service'
 
 
 @Component({
   selector: 'angular2-di-app',
-  providers: [],
+  providers: [Logger],
   templateUrl: 'app/angular2-di.html',
-  directives: [],
+  directives: [HeroesComponent],
   pipes: []
 })
 export class Angular2DiApp {
